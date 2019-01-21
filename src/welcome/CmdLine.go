@@ -5,10 +5,9 @@ import(
   "os"
 )
 func main() {
-
-	if len(os.Args) > 1 {
-		fmt.Println(os.Args[1])
-    fmt.Println(os.Args[0])
+  args:=os.Args
+	if len(args) > 1 {
+		fmt.Println(args[1])
 	} else {
 		fmt.Println("I am Gopher")
 	}
