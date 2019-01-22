@@ -16,9 +16,8 @@ func main() {
   moreLangs=append(moreLangs,"Ruby")
   moreLangs=append(moreLangs,"JS")
 	fmt.Println(moreLangs)
-  //Looping on
-  for i,element:=range(moreLangs){
-    fmt.Print(i)
+  //Looping on, '_' denotes a value which will not be referenced again to avoid unused variables
+  for _,element:=range(moreLangs){
     fmt.Println(element)
   }
 
